@@ -2,14 +2,16 @@
   "name": "landing_page",
   "version": "1.0.0",
   "description": "",
-  "scripts": {
-    "start": "parcel ./*.html ",
-    "build": "parcel build ./*.html  --dist-dir ./build"
-  },
+ "scripts": {
+  "start": "parcel ./*.html",
+  "build": "parcel build ./*.html --dist-dir ./build",
+  "postinstall": "chmod +x ./node_modules/.bin/parcel"
+}
+,
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.12.0",
+    "parcel": "^2.7.0",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
   }
