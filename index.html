@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito Sans:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500&display=swap" />
+
+  <style>
+    @font-face {
+      font-family: "Clash Display";
+      src: url("./public/ClashDisplay-Regular.otf");
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: "Clash Display";
+      src: url("./public/ClashDisplay-Variable.ttf");
+      font-weight: 500;
+    }
+
+    @font-face {
+      font-family: "Clash Display";
+      src: url("./public/ClashDisplay-Semibold.otf");
+      font-weight: 600;
+    }
+
+    @font-face {
+      font-family: "Clash Display";
+      src: url("./public/ClashDisplay-Bold.otf");
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+  <div
+    class="w-full relative rounded-[50px] bg-white overflow-hidden flex flex-col items-start justify-start pt-[2.5rem] pb-[2.581rem] pr-[1.562rem] pl-[10.937rem] box-border gap-[7.187rem] tracking-[normal] leading-[normal] text-left text-[1.125rem] text-black font-clash-display mq750:gap-[3.563rem] mq750:pl-[5.438rem] mq750:box-border mq450:gap-[1.813rem] mq450:pl-[1.25rem] mq450:box-border">
+    <header
+      class="w-[74.875rem] flex flex-row items-start justify-center max-w-full text-left text-[0.263rem] text-black font-plus-jakarta-sans">
+      <div class="w-[61.375rem] flex flex-row items-start justify-between gap-[1.25rem] max-w-full">
+        <div
+          class="w-[26.688rem] flex flex-col items-start justify-start pt-[1.062rem] px-[0rem] pb-[0rem] box-border max-w-full">
+          <div class="self-stretch flex flex-row items-start justify-start gap-[2.5rem] max-w-full mq450:gap-[1.25rem]">
+            <div class="flex flex-col items-start justify-start pt-[0.375rem] px-[0rem] pb-[0rem]">
+              <b class="relative font-extrabold inline-block min-w-[0.563rem] z-[8]">TM</b>
+            </div>
+            <nav
+              class="m-0 flex-1 flex flex-row items-start justify-start gap-[1.5rem] max-w-full text-left text-[1.25rem] text-t font-clash-display mq750:hidden">
+              <a class="[text-decoration:none] text-black focus:text-tomato  relative leading-[1.625rem] capitalize font-medium  focus:font-bold inline-block min-w-[3.75rem] z-[8]"
+                home href="#home">home</a>
+              <a class="[text-decoration:none] focus:text-tomato flex-1 relative leading-[1.625rem] capitalize font-medium  focus:font-bold text-[inherit] inline-block min-w-[5.563rem] whitespace-nowrap z-[8]"
+                href="#about us">about us</a>
+              <a class="[text-decoration:none] focus:text-tomato relative leading-[1.625rem] capitalize font-medium focus:font-bold text-[inherit] inline-block min-w-[4.25rem] z-[8]"
+                href="#pricing">pricing</a>
+              <a class="[text-decoration:none] focus:text-tomato flex-1 relative leading-[1.625rem] capitalize font-medium focus:font-bold text-[inherit] inline-block min-w-[5.563rem] z-[8]"
+                href="#featutres">features</a>
+            </nav>
+          </div>
+        </div>
+        <button
+          class="cursor-pointer [border:none] py-[1rem] px-[2.875rem] bg-black rounded flex flex-row items-start justify-start z-[8] hover:bg-darkslategray">
+          <div class="h-[3.75rem] w-[11.25rem] relative rounded bg-black hidden"></div>
+          <a
+            class="[text-decoration:none] relative text-[1.125rem] leading-[1.75rem] capitalize font-medium font-clash-display text-white text-left inline-block min-w-[5.5rem] z-[1]">download</a>
+        </button>
+      </div>
+    </header>
+    <div class="w-[39.875rem] flex flex-row items-start justify-start relative max-w-full text-[6.65rem]">
+      <b
+        class="h-[6.688rem] w-[5.563rem] absolute !m-[0] bottom-[3.876rem] left-[-2.125rem] leading-[6.649rem] capitalize inline-block [transform:_rotate(-28deg)] [transform-origin:0_0] z-[6] mq450:text-[2rem] mq450:leading-[2.688rem] mq1050:text-[3.313rem] mq1050:leading-[4rem]">a</b>
+      <div
+        class="flex-1 flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[28.062rem] box-border gap-[1.5rem] max-w-full text-[1.125rem] mq750:pb-[18.25rem] mq750:box-border">
+        <h1
+          class="m-0 w-[38.625rem] relative text-[4rem] leading-[4rem] capitalize font-bold font-inherit inline-block max-w-full z-[8] mq450:text-[2.375rem] mq450:leading-[2.375rem] mq1050:text-[3.188rem] mq1050:leading-[3.188rem]">
+          make the best financial decisions
+        </h1>
+        <p class="m-0 self-stretch relative leading-[1.75rem] capitalize font-medium text-gray-500 z-[8]">
+          Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet
+          faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
+        </p>
+        <div class="w-[23.375rem] flex flex-row items-start justify-between max-w-full gap-[1.25rem] mq450:flex-wrap">
+          <button id="getStartedButton"
+            class="cursor-pointer border-none py-[1rem] px-[1.437rem] bg-black rounded flex flex-row items-start justify-start gap-[0.5rem] z-[8]">
+            <div class="h-[3.75rem] w-[11.25rem] relative rounded bg-black hidden"></div>
+            <div
+              class="relative text-[1.125rem] leading-[1.75rem] capitalize font-medium font-clash-display text-white text-left inline-block min-w-[6.375rem] whitespace-nowrap z-[1]">
+              get started
+            </div>
+            <div class="flex flex-col items-start justify-start pt-[0.875rem] px-[0rem] pb-[0rem] ml-2">
+              <img id="getStartedImg" class="w-[1.5rem] h-[0.463rem] relative z-[1] invert-0" alt=""
+                src="/public/vector-1.svg" />
+            </div>
+          </button>
+          <button id="watchVideoButton"
+            class="cursor-pointer border-none py-[1rem] pl-[2.5rem] pr-[2rem] bg-white rounded flex flex-row items-start justify-start gap-[0.5rem] z-[8]">
+            <div class="h-[3.75rem] w-[11.25rem] relative rounded  bg-white hidden"></div>
+            <div
+              class="relative text-[1.125rem] leading-[1.75rem] capitalize font-medium font-clash-display text-black text-left inline-block min-w-[6.938rem] whitespace-nowrap z-[1]">
+              watch video
+            </div>
+            <div class="flex flex-col items-start justify-start pt-[0.875rem] px-[0rem] pb-[0rem] ml-2">
+              <img id="watchVideoImg" class="w-[1.5rem] h-[0.463rem] relative z-[1] invert-0" alt=""
+                src="/public/vector-1.svg" />
+            </div>
+          </button>
+        </div>
+
+      </div>
+    </div>
+    <div
+      class="self-stretch flex flex-col items-end justify-start pt-[0rem] px-[0rem] pb-[4.312rem] box-border gap-[2.968rem] max-w-full lg:pb-[2.813rem] lg:box-border mq750:gap-[1.5rem] mq750:pb-[1.813rem] mq750:box-border">
+      <div
+        class="w-[45.656rem] flex flex-row items-start justify-end py-[0rem] px-[2.875rem] box-border max-w-full mq750:pl-[1.438rem] mq750:pr-[1.438rem] mq750:box-border">
+        <div class="flex-1 flex flex-col items-start justify-start gap-[2rem] max-w-full mq750:gap-[1rem]">
+          <div class="flex flex-col items-start justify-start gap-[0.25rem] max-w-full text-tomato">
+            <div
+              class="relative tracking-[0.16em] leading-[1.75rem] uppercase font-medium inline-block min-w-[7.438rem] z-[8]">
+              features
+            </div>
+            <h1
+              class="m-0 relative text-[3rem] leading-[3rem] capitalize font-bold font-inherit text-black z-[8] mq450:text-[1.813rem] mq450:leading-[1.813rem] mq1050:text-[2.375rem] mq1050:leading-[2.375rem]">
+              uifry premium
+            </h1>
+          </div>
+          <div class="self-stretch flex flex-col items-start justify-start gap-[0.75rem]">
+            <div class="flex flex-row items-start justify-start py-[0rem] px-[2rem]">
+              <b class="relative leading-[1.75rem] capitalize font-semibold z-[8]">budgeting intervals</b>
+            </div>
+            <p class="m-0 self-stretch relative leading-[1.75rem] capitalize font-medium text-gray-500 z-[8]">
+              Cum et convallis risus placerat aliquam, nunc. Scelerisque
+              aliquet faucibus tincidunt eu adipiscing sociis arcu lorem
+              porttitor.
+            </p>
+          </div>
+          <div class="self-stretch flex flex-col items-start justify-start gap-[0.75rem]">
+            <div class="flex flex-row items-start justify-start py-[0rem] px-[2rem]">
+              <b class="relative leading-[1.75rem] capitalize font-semibold z-[8]">budgeting intervals</b>
+            </div>
+            <p class="m-0 self-stretch relative leading-[1.75rem] capitalize font-medium text-gray-500 z-[8]">
+              Cum et convallis risus placerat aliquam, nunc. Scelerisque
+              aliquet faucibus tincidunt eu adipiscing sociis arcu lorem
+              porttitor.
+            </p>
+          </div>
+          <div class="self-stretch flex flex-col items-start justify-start gap-[0.75rem]">
+            <div class="flex flex-row items-start justify-start py-[0rem] px-[2rem]">
+              <b class="relative leading-[1.75rem] capitalize font-semibold z-[8]">budgeting intervals</b>
+            </div>
+            <p class="m-0 self-stretch relative leading-[1.75rem] capitalize font-medium text-gray-500 z-[8]">
+              Cum et convallis risus placerat aliquam, nunc. Scelerisque
+              aliquet faucibus tincidunt eu adipiscing sociis arcu lorem
+              porttitor.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="self-stretch flex flex-row items-start justify-start gap-[3.125rem] max-w-full text-tomato lg:flex-wrap mq750:gap-[1.563rem]">
+        <div
+          class="w-[29.375rem] flex flex-row items-start justify-start relative min-w-[29.375rem] max-w-full lg:flex-1 mq750:min-w-full">
+          <div class="h-[44.969rem] w-[44.969rem] absolute !m-[0] top-[-39.969rem] left-[-8.062rem]">
+            <div
+              class="absolute top-[7.294rem] left-[6.188rem] w-[24.563rem] h-[17.819rem] flex items-center justify-center">
+              <img class="w-full h-full object-contain absolute left-[0rem] top-[0rem] [transform:scale(1.724)]"
+                loading="lazy" alt="" src="/public/group-35930.svg" />
+            </div>
+            <img class="absolute top-[7.981rem] left-[0rem] w-[4.244rem] h-[4.244rem] object-contain z-[8]" alt=""
+              src="/public/star-2.svg" />
+
+            <img class="absolute top-[15.125rem] left-[42.75rem] w-[1.5rem] h-[1.5rem] overflow-hidden z-[8]" alt=""
+              src="/public/star05.svg" />
+
+            <img class="absolute top-[23.125rem] left-[42.75rem] w-[1.5rem] h-[1.5rem] overflow-hidden z-[8]" alt=""
+              src="/public/cube02.svg" />
+
+            <img class="absolute top-[31.125rem] left-[42.75rem] w-[1.5rem] h-[1.5rem] overflow-hidden z-[8]" alt=""
+              src="/public/cube04.svg" />
+
+            <div class="absolute top-[0rem] left-[0rem] w-full h-full z-[9] flex items-center justify-center">
+              <img
+                class="w-full h-full z-[9] object-contain absolute left-[0rem] top-[1.25rem] [transform:scale(1.057)]"
+                alt="" src="/public/group-35933@2x.png" />
+            </div>
+          </div>
+          <div
+            class="flex-1 flex flex-col items-start justify-start pt-[12.375rem] px-[0rem] pb-[0rem] box-border max-w-full">
+            <div
+              class="self-stretch flex flex-col items-start justify-start gap-[2.625rem] max-w-full mq750:gap-[1.313rem]">
+              <div class="self-stretch flex flex-col items-start justify-start gap-[0.25rem]">
+                <div class="relative tracking-[0.16em] leading-[1.75rem] uppercase font-medium z-[8]">
+                  advatnages
+                </div>
+                <h1
+                  class="m-0 relative text-[3rem] leading-[3rem] capitalize font-bold font-inherit text-black z-[8] mq450:text-[1.813rem] mq450:leading-[1.813rem] mq1050:text-[2.375rem] mq1050:leading-[2.375rem]">
+                  why choose Uifry?
+                </h1>
+              </div>
+              <div
+                class="flex flex-row items-start justify-start py-[0rem] px-[3.937rem] box-border max-w-full text-[1.75rem] text-black mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
+                <h3
+                  class="m-0 relative text-inherit leading-[1.75rem] capitalize font-semibold font-inherit z-[8] mq450:text-[1.375rem] mq450:leading-[1.375rem]">
+                  clever notifications
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-[44.969rem] flex-1 relative min-w-[29.188rem] max-w-full text-gray-500 mq750:min-w-full">
+          <div
+            class="absolute top-[20.263rem] left-[7.563rem] w-[20.438rem] h-[14.831rem] flex items-center justify-center">
+            <img class="w-full h-full object-contain absolute left-[0rem] top-[0rem] [transform:scale(1.869)]" alt=""
+              src="/public/group-35931.svg" />
+          </div>
+          <p
+            class="m-0 absolute bottom-[12.406rem] left-[-32.5rem] leading-[1.75rem] capitalize font-medium inline-block w-[33.438rem] z-[8]">
+            Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
+            ultricies. In ultrices malesuada elit mauris etiam odio. Duis
+            tristique lacus, et blandit viverra nisl velit. Sed mattis
+            rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget
+            ac dolor neque lorem sapien, suspendisse aliquam.
+          </p>
+          <div class="absolute top-[0rem] left-[0rem] w-full h-full z-[10] flex items-center justify-center">
+            <img class="w-full h-full z-[10] object-contain absolute left-[0rem] top-[1.25rem] [transform:scale(1.056)]"
+              alt="" src="/public/group-35935@2x.png" />
+          </div>
+          <div
+            class="absolute top-[21.263rem] left-[21.688rem] shadow-[4px_4px_40px_rgba(0,_0,_0,_0.1)] rounded-lg bg-white w-[12.563rem] flex flex-row items-start justify-start pt-[0.656rem] px-[0.625rem] pb-[0.65rem] box-border gap-[0.768rem] z-[11] text-[0.925rem] text-gray-400 font-nunito-sans">
+            <div
+              class="h-[3.844rem] w-[12.563rem] relative shadow-[4px_4px_40px_rgba(0,_0,_0,_0.1)] rounded-lg bg-white hidden">
+            </div>
+            <img class="h-[2.538rem] w-[2.538rem] relative rounded-[12.29px] object-cover z-[1]" loading="lazy" alt=""
+              src="/public/rectangle-13@2x.png" />
+
+            <div
+              class="w-[7.669rem] flex flex-col items-start justify-start pt-[0.112rem] px-[0rem] pb-[0rem] box-border">
+              <div class="self-stretch flex flex-col items-start justify-start gap-[0.368rem]">
+                <div class="self-stretch flex flex-row items-start justify-between gap-[1.25rem]">
+                  <div class="flex flex-col items-start justify-start pt-[0.231rem] px-[0rem] pb-[0rem]">
+                    <b
+                      class="relative tracking-[0.61px] leading-[0.938rem] font-bold inline-block min-w-[3.875rem] whitespace-nowrap z-[1]">$560.00</b>
+                  </div>
+                  <div
+                    class="relative text-[0.463rem] leading-[0.5rem] text-red text-center inline-block min-w-[1.75rem] z-[1]">
+                    On Hold
+                  </div>
+                </div>
+                <div
+                  class="relative text-[0.538rem] tracking-[0.31px] leading-[0.563rem] text-gray-100 inline-block min-w-[3.063rem] z-[1]">
+                  From Adom
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute bottom-[-39.969rem] left-[-40.437rem] w-full h-full flex flex-col items-end justify-start pt-[14.043rem] px-[12.437rem] pb-[14.062rem] box-border text-[0.125rem] text-white font-plus-jakarta-sans mq750:pl-[6.188rem] mq750:pr-[6.188rem] mq750:box-border mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
+            <img class="w-[4.244rem] h-[4.244rem] absolute !m-[0] top-[0.481rem] right-[4.288rem] object-contain z-[8]"
+              alt="" src="/public/star-2.svg" />
+
+            <div
+              class="w-full h-full absolute !m-[0] top-[0rem] right-[0rem] bottom-[0rem] left-[0rem] max-w-full max-h-full z-[11] flex items-center justify-center">
+              <img
+                class="w-full h-full overflow-hidden z-[11] object-contain absolute left-[0rem] top-[1.25rem] [transform:scale(1.057)]"
+                alt="" src="/public/group-35937@2x.png" />
+            </div>
+            <div class="w-[16.319rem] flex flex-row items-start justify-start relative">
+              <img
+                class="h-[29.425rem] w-[30.275rem] absolute !m-[0] bottom-[-15.969rem] left-[-7.062rem] object-contain"
+                alt="" src="/public/group-35932@2x.png" />
+
+              <div
+                class="flex-1 [backdrop-filter:blur(27.89px)] rounded-2xl bg-black flex flex-col items-start justify-start pt-[0.943rem] px-[1.062rem] pb-[0.906rem] gap-[4.393rem] z-[12] mq450:gap-[2.188rem]">
+                <div class="w-[16.256rem] h-[9.956rem] relative rounded-2xl bg-black hidden"></div>
+                <div class="self-stretch flex flex-row items-end justify-between gap-[1.25rem]">
+                  <div class="flex flex-row items-start justify-start gap-[0.068rem]">
+                    <img class="h-[1.044rem] w-[3.169rem] relative object-cover z-[13]" loading="lazy" alt=""
+                      src="/public/group@2x.png" />
+
+                    <div class="flex flex-col items-start justify-start pt-[0.306rem] px-[0rem] pb-[0rem]">
+                      <b class="relative font-extrabold inline-block min-w-[0.269rem] z-[13]">TM</b>
+                    </div>
+                  </div>
+                  <div class="flex flex-col items-start justify-end pt-[0rem] px-[0rem] pb-[0.062rem]">
+                    <img class="w-[2.769rem] h-[0.913rem] relative z-[13]" loading="lazy" alt=""
+                      src="/public/credit-cardvisa-typewhite.svg" />
+                  </div>
+                </div>
+                <div class="flex flex-col items-start justify-start gap-[0.793rem] text-[0.794rem] font-dm-sans">
+                  <div class="relative tracking-[0.08em] font-medium shrink-0 [debug_commit:bf4bc93] z-[13]">
+                    0000 8888 2222 3333
+                  </div>
+                  <div
+                    class="flex flex-row items-start justify-start gap-[0.318rem] shrink-0 [debug_commit:bf4bc93] text-[0.3rem]">
+                    <div class="flex flex-col items-start justify-start pt-[0.268rem] px-[0rem] pb-[0rem]">
+                      <div class="relative tracking-[0.08em] leading-[0.313rem] inline-block min-w-[1.875rem] z-[13]">
+                        VALID THRU
+                      </div>
+                    </div>
+                    <div class="relative text-[0.65rem] tracking-[0.08em] inline-block min-w-[2rem] z-[13]">
+                      07/24
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="self-stretch flex flex-row items-start justify-center pt-[0rem] pb-[11.231rem] pr-[0rem] pl-[27rem] box-border max-w-full text-[1.75rem] mq750:pl-[6.75rem] mq750:box-border mq450:pb-[7.313rem] mq450:box-border mq1050:pl-[13.5rem] mq1050:box-border">
+      <div class="w-[35.125rem] flex flex-col items-start justify-start gap-[2.062rem] max-w-full mq750:gap-[1rem]">
+        <div
+          class="flex flex-row items-start justify-start py-[0rem] px-[3.937rem] box-border max-w-full mq450:pl-[1.25rem] mq450:pr-[1.25rem] mq450:box-border">
+          <h3
+            class="m-0 relative text-inherit leading-[1.75rem] capitalize font-semibold font-inherit z-[8] mq450:text-[1.375rem] mq450:leading-[1.375rem]">
+            fully customizable
+          </h3>
+        </div>
+        <p
+          class="m-0 self-stretch relative text-[1.125rem] leading-[1.75rem] capitalize font-medium text-gray-500 z-[8]">
+          Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies.
+          In ultrices malesuada elit mauris etiam odio. Duis tristique lacus,
+          et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse
+          sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien,
+          suspendisse aliquam.
+        </p>
+      </div>
+    </div>
+    <div
+      class="self-stretch flex flex-row items-start justify-center pt-[0rem] pb-[8.062rem] pr-[0rem] pl-[10.5rem] box-border max-w-full mq750:pl-[2.625rem] mq750:box-border mq450:pb-[3.438rem] mq450:box-border mq1050:pl-[5.25rem] mq1050:pb-[5.25rem] mq1050:box-border">
+      <div
+        class="w-[48.25rem] flex flex-col items-start justify-start gap-[5.5rem] max-w-full mq450:gap-[1.375rem] mq1050:gap-[2.75rem]">
+        <div
+          class="w-[28.438rem] flex flex-col items-end justify-start pt-[0rem] px-[0rem] pb-[2.312rem] box-border gap-[0.25rem] max-w-full text-center">
+          <div class="self-stretch flex flex-row items-start justify-center py-[0rem] pr-[1.25rem] pl-[1.5rem]">
+            <div class="relative tracking-[0.16em] leading-[1.75rem] uppercase font-medium z-[8]">
+              testimonial
+            </div>
+          </div>
+          <h1
+            class="m-0 self-stretch relative text-[3rem] leading-[3rem] capitalize font-bold font-inherit z-[8] mq450:text-[1.813rem] mq450:leading-[1.813rem] mq1050:text-[2.375rem] mq1050:leading-[2.375rem]">
+            what our users say about us?
+          </h1>
+        </div>
+        <div class="self-stretch flex flex-row items-start justify-end max-w-full text-[1.75rem]">
+          <div class="w-[27.625rem] flex flex-col items-start justify-start gap-[1.5rem] max-w-full">
+            <h3
+              class="m-0 self-stretch relative text-inherit leading-[1.75rem] capitalize font-semibold font-inherit z-[8] mq450:text-[1.375rem] mq450:leading-[1.375rem]">
+              the best financial accounting app ever!
+            </h3>
+            <blockquote
+              class="m-0 self-stretch relative text-[1.125rem] leading-[1.75rem] capitalize font-medium text-gray-500 z-[8]">
+              “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
+              ultricies. In ultrices malesuada elit mauris etiam odio. Duis
+              tristique lacus, et blandit viverra nisl velit. Sed mattis
+              rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget
+              ac dolor neque lorem sapien, suspendisse aliquam.”
+            </blockquote>
+          </div>
+        </div>
+        <div
+          class="w-[47.313rem] flex flex-row items-start justify-center py-[0rem] px-[1.25rem] box-border max-w-full">
+          <b class="relative leading-[1.75rem] capitalize font-semibold inline-block min-w-[6.063rem] z-[8]">nick
+            jonas</b>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-[68.125rem] flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[2.5rem] box-border gap-[2.5rem] max-w-full text-tomato mq750:gap-[1.25rem]">
+      <div
+        class="w-[31.063rem] flex flex-col items-start justify-start gap-[0.25rem] shrink-0 [debug_commit:bf4bc93] max-w-full">
+        <div
+          class="relative tracking-[0.16em] leading-[1.75rem] uppercase font-medium inline-block min-w-[2.938rem] z-[8]">
+          faq
+        </div>
+        <h1
+          class="m-0 self-stretch relative text-[3rem] leading-[3rem] capitalize font-bold font-inherit text-black z-[8] mq450:text-[1.813rem] mq450:leading-[1.813rem] mq1050:text-[2.375rem] mq1050:leading-[2.375rem]">
+          Frequently asked questions
+        </h1>
+      </div>
+      <div
+        class="self-stretch flex flex-row flex-wrap items-start justify-start gap-[1.25rem] shrink-0 [debug_commit:bf4bc93] max-w-full z-[8] text-[1.75rem] text-white">
+        <div
+          class="flex-1 flex flex-col items-start justify-start gap-[1.25rem] min-w-[21.75rem] max-w-full mq750:min-w-full">
+          <div
+            class="self-stretch rounded-lg bg-tomato flex flex-col items-start justify-start pt-[1.937rem] pb-[1.875rem] pr-[1.875rem] pl-[1.937rem] box-border gap-[0.5rem] max-w-full">
+            <div class="w-[33.438rem] h-[11.313rem] relative rounded-lg bg-tomato hidden max-w-full"></div>
+            <h3
+              class="m-0 self-stretch relative text-inherit leading-[1.75rem] capitalize font-semibold font-inherit z-[1] mq450:text-[1.375rem] mq450:leading-[1.375rem]">
+              the best financial accounting app ever!
+            </h3>
+            <p
+              class="m-0 self-stretch relative text-[1.125rem] leading-[1.75rem] capitalize font-medium text-justify z-[1]">
+              “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
+              ultricies. In ultrices malesuada elit mauris.
+            </p>
+          </div>
+          <div
+            class="self-stretch rounded-lg bg-white flex flex-col items-start justify-start pt-[1.937rem] pb-[1.875rem] pr-[1.875rem] pl-[1.937rem] box-border gap-[0.5rem] max-w-full text-black">
+            <div class="w-[33.438rem] h-[11.313rem] relative rounded-lg bg-white hidden max-w-full"></div>
+            <h3
+              class="m-0 self-stretch relative text-inherit leading-[1.75rem] capitalize font-semibold font-inherit z-[1] mq450:text-[1.375rem] mq450:leading-[1.375rem]">
+              the best financial accounting app ever!
+            </h3>
+            <p
+              class="m-0 self-stretch relative text-[1.125rem] leading-[1.75rem] capitalize font-medium text-gray-500 text-justify z-[1]">
+              “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
+              ultricies. In ultrices malesuada elit mauris.
+            </p>
+          </div>
+          <div
+            class="self-stretch rounded-lg bg-tomato flex flex-col items-start justify-start pt-[1.937rem] pb-[1.875rem] pr-[1.875rem] pl-[1.937rem] box-border gap-[0.5rem] max-w-full">
+            <div class="w-[33.438rem] h-[11.313rem] relative rounded-lg bg-tomato hidden max-w-full"></div>
+            <h3
+              class="m-0 self-stretch relative text-inherit leading-[1.75rem] capitalize font-semibold font-inherit z-[1] mq450:text-[1.375rem] mq450:leading-[1.375rem]">
+              the best financial accounting app ever!
+            </h3>
+            <p
+              class="m-0 self-stretch relative text-[1.125rem] leading-[1.75rem] capitalize font-medium text-justify z-[1]">
+              “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
+              ultricies. In ultrices malesuada elit mauris.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex-1 flex flex-col items-start justify-start gap-[1.25rem] min-w-[21.75rem] max-w-full text-black mq750:min-w-full">
+          <div
+            class="self-stretch rounded-lg bg-white flex flex-col items-start justify-start pt-[1.937rem] pb-[1.875rem] pr-[1.875rem] pl-[1.937rem] box-border gap-[0.5rem] max-w-full">
+            <div class="w-[33.438rem] h-[11.313rem] relative rounded-lg bg-white hidden max-w-full"></div>
+            <h3
+              class="m-0 self-stretch relative text-inherit leading-[1.75rem] capitalize font-semibold font-inherit z-[1] mq450:text-[1.375rem] mq450:leading-[1.375rem]">
+              the best financial accounting app ever!
+            </h3>
+            <p
+              class="m-0 self-stretch relative text-[1.125rem] leading-[1.75rem] capitalize font-medium text-gray-500 text-justify z-[1]">
+              “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
+              ultricies. In ultrices malesuada elit mauris.
+            </p>
+          </div>
+          <div
+            class="self-stretch rounded-lg bg-tomato flex flex-col items-start justify-start pt-[1.937rem] pb-[1.875rem] pr-[1.875rem] pl-[1.937rem] box-border gap-[0.5rem] max-w-full text-white">
+            <div class="w-[33.438rem] h-[11.313rem] relative rounded-lg bg-tomato hidden max-w-full"></div>
+            <h3
+              class="m-0 self-stretch relative text-inherit leading-[1.75rem] capitalize font-semibold font-inherit z-[1] mq450:text-[1.375rem] mq450:leading-[1.375rem]">
+              the best financial accounting app ever!
+            </h3>
+            <p
+              class="m-0 self-stretch relative text-[1.125rem] leading-[1.75rem] capitalize font-medium text-justify z-[1]">
+              “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
+              ultricies. In ultrices malesuada elit mauris.
+            </p>
+          </div>
+          <div
+            class="self-stretch rounded-lg bg-white flex flex-col items-start justify-start pt-[1.937rem] pb-[1.875rem] pr-[1.875rem] pl-[1.937rem] box-border gap-[0.5rem] max-w-full">
+            <div class="w-[33.438rem] h-[11.313rem] relative rounded-lg bg-white hidden max-w-full"></div>
+            <h3
+              class="m-0 self-stretch relative text-inherit leading-[1.75rem] capitalize font-semibold font-inherit z-[1] mq450:text-[1.375rem] mq450:leading-[1.375rem]">
+              the best financial accounting app ever!
+            </h3>
+            <p
+              class="m-0 self-stretch relative text-[1.125rem] leading-[1.75rem] capitalize font-medium text-gray-500 text-justify z-[1]">
+              “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
+              ultricies. In ultrices malesuada elit mauris.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-[68.125rem] flex flex-row items-start justify-start pt-[0rem] px-[0rem] pb-[2.5rem] box-border max-w-full text-[3rem] text-white">
+      <div
+        class="flex-1 rounded-lg bg-black overflow-hidden flex flex-row items-start justify-start pt-[9.75rem] px-[4.812rem] pb-[14.5rem] box-border relative max-w-full z-[8] mq750:pt-[6.313rem] mq750:px-[2.375rem] mq750:pb-[9.438rem] mq750:box-border">
+        <h1
+          class="m-0 relative text-inherit leading-[3rem] capitalize font-bold font-inherit z-[1] mq450:text-[1.813rem] mq450:leading-[1.813rem] mq1050:text-[2.375rem] mq1050:leading-[2.375rem]">
+          ready to get started?
+        </h1>
+        <div
+          class="w-[33.5rem] flex flex-col items-start justify-start pt-[4rem] px-[0rem] pb-[0rem] box-border max-w-full ml-[-34.25rem] text-[1.125rem]">
+          <p class="m-0 self-stretch relative leading-[1.75rem] capitalize z-[1]">
+            Risus habitant leo egestas mauris diam eget morbi tempus
+            vulputate.
+          </p>
+        </div>
+        <div class="h-[44.969rem] w-[35.406rem] absolute !m-[0] bottom-[-25.219rem] left-[-10.937rem]">
+          <img class="absolute h-full top-[0rem] bottom-[0rem] left-[-9.562rem] max-h-full w-[44.969rem]" alt=""
+            src="/public/group-35905.svg" />
+
+          <button
+            class="cursor-pointer [border:none] pt-[0.875rem] pb-[0.9rem] pr-[1.312rem] pl-[1.375rem] bg-white absolute top-[6.25rem] left-[15.75rem] rounded flex flex-row items-start justify-start gap-[0.75rem] z-[1]">
+            <div class="h-[3.75rem] w-[13rem] relative rounded bg-white hidden"></div>
+            <div class="flex flex-col items-start justify-start pt-[0.125rem] px-[0rem] pb-[0rem]">
+              <div
+                class="relative text-[1.125rem] leading-[1.75rem] capitalize font-medium font-clash-display text-black text-left inline-block min-w-[7.938rem] z-[1]">
+                download app
+              </div>
+            </div>
+            <img class="self-stretch w-[1.613rem] relative max-h-full min-h-[2rem] z-[1]" alt=""
+              src="/public/star.svg" />
+          </button>
+        </div>
+        <div class="h-[45.744rem] w-[42.25rem] absolute !m-[0] top-[-15.5rem] right-[-10.937rem]">
+          <img class="absolute top-[0rem] left-[8.813rem] w-[44.969rem] h-[44.969rem]" alt=""
+            src="/public/group-35905.svg" />
+
+          <div class="absolute top-[17rem] left-[0rem] w-[36.938rem] h-[28.744rem]">
+            <img class="absolute top-[4.688rem] left-[8.938rem] w-[23.638rem] h-[22.969rem] object-contain z-[1]"
+              loading="lazy" alt="" src="/public/group-35932-1@2x.png" />
+
+            <img class="absolute top-[0rem] left-[0rem] w-full h-full object-cover" alt=""
+              src="/public/iphone-13-pro@2x.png" />
+
+            <img class="absolute top-[0.625rem] left-[3.75rem] w-[4rem] h-[4rem] z-[3]" loading="lazy" alt=""
+              src="/public/star-7.svg" />
+          </div>
+        </div>
+        <img class="h-[4.244rem] w-[4.244rem] absolute !m-[0] bottom-[6.381rem] left-[25.75rem] object-contain"
+          loading="lazy" alt="" src="/public/star-6-1.svg" />
+      </div>
+    </div>
+    <main
+      class="w-full h-full absolute !m-[0] top-[0rem] right-[0rem] bottom-[0rem] left-[0rem] text-left text-[0.738rem] text-black font-clash-display">
+      <div
+        class="absolute top-[70.231rem] left-[79.438rem] w-[20.438rem] h-[14.831rem] flex items-center justify-center">
+        <img class="w-full h-full object-contain absolute left-[-3.25rem] top-[0rem] [transform:scale(1.869)]"
+          loading="lazy" alt="" src="/public/group-35931.svg" />
+      </div>
+      <div
+        class="absolute top-[293.106rem] left-[2.125rem] w-[20.438rem] h-[14.831rem] flex items-center justify-center">
+        <img class="w-full h-full object-contain absolute left-[2.188rem] top-[0rem] [transform:scale(1.869)]" alt=""
+          src="/public/group-35931.svg" />
+      </div>
+      <img class="absolute top-[47.563rem] left-[28.375rem] rounded-lg w-[16rem] h-[4.438rem]" alt=""
+        src="/public/rectangle-4.svg" />
+
+      <div class="absolute top-[32.731rem] left-[12.35rem] w-[31.581rem] h-[19.619rem] z-[5]">
+        <div class="absolute top-[14.831rem] left-[24.55rem] bg-black w-[0.081rem] h-[4.45rem] z-[1]"></div>
+        <div class="absolute top-[14.831rem] left-[19.894rem] bg-black w-[0.081rem] h-[4.45rem] z-[2]"></div>
+        <div class="absolute top-[0.613rem] left-[13.019rem] w-[18.594rem] h-[18.913rem]">
+          <img class="absolute top-[14.288rem] left-[4rem] w-[3.525rem] h-[3.569rem] object-contain z-[1]"
+            loading="lazy" alt="" src="/public/rectangle-5.svg" />
+
+          <img class="absolute top-[15.156rem] left-[7.938rem] w-[2.613rem] h-[2.613rem] z-[1]" loading="lazy" alt=""
+            src="/public/star-7-1.svg" />
+
+          <img class="absolute top-[0rem] left-[0rem] rounded-lg w-full h-full object-contain z-[3]" alt=""
+            src="/public/rectangle-3.svg" />
+
+          <p
+            class="m-0 absolute top-[13.523rem] left-[4.55rem] leading-[1.144rem] capitalize font-semibold [transform:_rotate(-45.7deg)] [transform-origin:0_0] z-[4]">
+            make the best financial decisions
+          </p>
+          <b
+            class="absolute top-[15.238rem] left-[12.594rem] leading-[1.188rem] capitalize font-semibold inline-block min-w-[5.438rem] z-[6]">Uifry
+            Premium</b>
+          <a
+            class="[text-decoration:none] absolute top-[16.463rem] left-[12.594rem] text-[0.656rem] leading-[1.188rem] capitalize font-medium text-[inherit] inline-block min-w-[3.063rem] z-[6]">free
+            trial</a>
+        </div>
+        <div
+          class="absolute top-[calc(50%_+_93.89px)] left-[calc(50%_-_252.65px)] rounded-tl-none rounded-tr-lg rounded-br-lg rounded-bl-none bg-black w-[33.394rem] h-[4.463rem] [transform:_rotate(-28deg)] [transform-origin:0_0]">
+        </div>
+        <img
+          class="absolute top-[calc(50%_-_127.35px)] left-[calc(50%_-_222.55px)] w-[27.5rem] h-[16.1rem] object-contain z-[1]"
+          alt="" src="/public/group-35920@2x.png" />
+
+        <img class="absolute top-[2.831rem] left-[5.213rem] w-[4.244rem] h-[4.244rem] object-contain z-[8]"
+          loading="lazy" alt="" src="/public/star-8.svg" />
+      </div>
+      <div
+        class="absolute top-[8.188rem] left-[57.188rem] w-[28.575rem] h-[44.819rem] flex items-center justify-center">
+        <img class="w-full h-full object-contain absolute left-[0.188rem] top-[1.5rem] [transform:scale(1.24)]"
+          loading="lazy" alt="" src="/public/group-35899.svg" />
+      </div>
+      <div class="absolute top-[9.5rem] left-[21.313rem] w-[19.813rem] h-[14.375rem] flex items-center justify-center">
+        <img class="w-full h-full object-contain absolute left-[0rem] top-[0rem] [transform:scale(1.87)]" loading="lazy"
+          alt="" src="/public/group-35896.svg" />
+      </div>
+      <img class="absolute top-[0rem] left-[0rem] w-[90rem] h-[513.75rem] object-cover mix-blend-soft-light z-[7]"
+        alt="" src="/public/input-filter@2x.png" />
+
+      <img class="absolute top-[28.882rem] left-[24.2rem] w-[1.813rem] h-[1.813rem] z-[8] invert" alt=""
+        src="/public/group-3.svg" />
+
+      <img class="absolute top-[7.25rem] left-[2.875rem] w-[4.244rem] h-[4.244rem] object-contain z-[8]" loading="lazy"
+        alt="" src="/public/star-8.svg" />
+
+      <div class="absolute top-[11.75rem] left-[51.438rem] w-[27.625rem] h-[40.313rem]">
+        <div class="absolute top-[0rem] left-[0rem] rounded-lg w-full h-full flex items-center justify-center">
+          <img class="w-full h-full object-contain absolute left-[5.5rem] top-[-0.125rem] [transform:scale(1.401)]"
+            alt="" src="/public/output-manager@2x.png" />
+        </div>
+        <img class="absolute top-[0.313rem] left-[4.375rem] w-[23.238rem] h-[34.525rem] object-contain z-[9]" alt=""
+          src="/public/iphone13profront@2x.png" />
+      </div>
+      <img class="absolute top-[7.25rem] left-[48.188rem] w-[23.206rem] h-[34.475rem] object-contain z-[10]" alt=""
+        src="/public/iphone13profront-1@2x.png" />
+
+      <img class="absolute top-[3.638rem] left-[13.463rem] w-[4.113rem] h-[1.831rem] z-[8]" loading="lazy" alt=""
+        src="/public/vector-11.svg" />
+
+      <img class="absolute top-[3.313rem] left-[10.938rem] w-[2.125rem] h-[2.125rem] overflow-hidden z-[8]"
+        loading="lazy" alt="" src="/public/frame.svg" />
+
+      <img class="absolute top-[220.919rem] left-[51.438rem] w-[2.5rem] h-[2.5rem] object-contain z-[8]" loading="lazy"
+        alt="" src="/public/group-28@2x.png" />
+
+      <div class="absolute top-[221.231rem] left-[54.438rem] w-[9rem] h-[1.875rem] opacity-[0.5] z-[8]">
+        <img class="absolute top-[calc(50%_-_15px)] left-[calc(50%_-_72px)] w-[1.875rem] h-[1.875rem] object-cover"
+          loading="lazy" alt="" src="/public/group-27@2x.png" />
+
+        <img class="absolute top-[calc(50%_-_15px)] left-[calc(50%_-_34px)] w-[1.875rem] h-[1.875rem] object-cover"
+          loading="lazy" alt="" src="/public/group-29@2x.png" />
+
+        <img class="absolute top-[calc(50%_-_15px)] left-[calc(50%_+_4px)] w-[1.875rem] h-[1.875rem] object-cover"
+          loading="lazy" alt="" src="/public/group-30@2x.png" />
+
+        <img class="absolute top-[calc(50%_-_15px)] left-[calc(50%_+_42px)] w-[1.875rem] h-[1.875rem] object-cover"
+          loading="lazy" alt="" src="/public/group-31@2x.png" />
+      </div>
+      <div class="absolute top-[193.106rem] left-[5rem] w-[44.563rem] h-[44.563rem]">
+        <div
+          class="absolute top-[15.563rem] left-[7.313rem] w-[20.438rem] h-[14.831rem] flex items-center justify-center">
+          <img class="w-full h-full object-contain absolute left-[0rem] top-[0rem] [transform:scale(1.869)]"
+            loading="lazy" alt="" src="/public/group-35931.svg" />
+        </div>
+        <div class="absolute top-[0rem] left-[0rem] w-full h-full flex items-center justify-center">
+          <img class="w-full h-full object-contain absolute left-[0.688rem] top-[0.375rem] [transform:scale(1.03)]"
+            alt="" src="/public/group-1000002332.svg" />
+        </div>
+      </div>
+      <img class="absolute top-[103.731rem] left-[85.625rem] w-[4rem] h-[4rem] z-[8]" loading="lazy" alt=""
+        src="/public/star-5.svg" />
+
+      <img class="absolute top-[178.856rem] left-[71rem] w-[4rem] h-[4rem] z-[8]" loading="lazy" alt=""
+        src="/public/star-5.svg" />
+
+      <img class="absolute top-[246.356rem] left-[48.688rem] w-[4rem] h-[4rem] z-[8]" loading="lazy" alt=""
+        src="/public/star-5.svg" />
+
+      <img class="absolute top-[293.106rem] left-[82.688rem] w-[4rem] h-[4rem] z-[8]" loading="lazy" alt=""
+        src="/public/star-5.svg" />
+
+      <img class="absolute top-[231.419rem] left-[3rem] w-[4.244rem] h-[4.244rem] object-contain z-[10]" alt=""
+        src="/public/star-2.svg" />
+
+      <img class="absolute top-[306.294rem] left-[3rem] w-[4.244rem] h-[4.244rem] object-contain z-[8]" loading="lazy"
+        alt="" src="/public/star-2.svg" />
+
+      <img class="absolute top-[118.281rem] left-[10.938rem] w-[3rem] h-[3rem] z-[8]" loading="lazy" alt=""
+        src="/public/group-35899-1.svg" />
+
+      <img class="absolute top-[154.75rem] left-[45.625rem] w-[3rem] h-[3rem] z-[8]" loading="lazy" alt=""
+        src="/public/group-35899-2.svg" />
+
+      <img class="absolute top-[339.981rem] left-[10.938rem] w-[2.125rem] h-[2.125rem] overflow-hidden z-[8]"
+        loading="lazy" alt="" src="/public/frame.svg" />
+
+      <img class="absolute top-[340.306rem] left-[13.463rem] w-[4.113rem] h-[1.831rem] z-[8]" loading="lazy" alt=""
+        src="/public/vector-11.svg" />
+
+      <img class="absolute top-[343.169rem] left-[10.938rem] w-[1.5rem] h-[1.5rem] overflow-hidden z-[8]" loading="lazy"
+        alt="" src="/public/frame-2.svg" />
+
+      <img class="absolute top-[345.794rem] left-[10.938rem] w-[1.5rem] h-[1.5rem] overflow-hidden z-[8]" loading="lazy"
+        alt="" src="/public/frame-3.svg" />
+    </main>
+    <div
+      class="w-[68.188rem] flex flex-col items-end justify-start gap-[5.75rem] max-w-full text-[1rem] lg:gap-[2.875rem] mq750:gap-[1.438rem]">
+      <div class="w-[66.188rem] flex flex-row items-start justify-between max-w-full gap-[1.25rem] lg:flex-wrap">
+        <div
+          class="w-[8.813rem] flex flex-col items-start justify-start pt-[0.625rem] px-[0rem] pb-[0rem] box-border text-[0.263rem] text-gray-300">
+          <div class="self-stretch flex flex-col items-start justify-start gap-[2.187rem]">
+            <div class="self-stretch flex flex-row items-start justify-end py-[0rem] px-[3.5rem]">
+              <div class="relative font-medium inline-block min-w-[0.563rem] z-[8]">
+                TM
+              </div>
+            </div>
+            <div class="flex flex-col items-start justify-start gap-[1rem] text-[1rem] text-black">
+              <a href="mailto:help@frybix.com" class="text-black no-underline relative leading-[1.625rem] capitalize font-medium whitespace-nowrap z-[8]">
+                  help@frybix.com
+              </a>
+              <a href="tel:+123445667889" class=" text-black no-underline relative leading-[1.625rem] capitalize font-medium whitespace-nowrap z-[8] ">
+                  +1 234 456 678 89
+              </a>
+          </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-start justify-start gap-[1rem]">
+          <div
+            class="[text-decoration:none] relative text-[2rem] leading-[2.625rem] capitalize font-medium text-[inherit] text-center inline-block min-w-[5.125rem] z-[8] mq450:text-[1.188rem] mq450:leading-[1.563rem] mq1050:text-[1.625rem] mq1050:leading-[2.125rem]"
+            >links</div
+          >
+          <div class="flex flex-row items-start justify-start py-0 px-1">
+            <a href="#home" class="relative leading-6 capitalize font-medium inline-block min-w-14 z-8 text-black no-underline">home</a>
+
+
+        </div>
+        <div class="flex flex-row items-start justify-start py-0 pr-1 pl-0">
+          <a href="#about-us" class="relative leading-6 capitalize font-medium inline-block min-w-20 z-8 text-black no-underline" >about us</a>
+
+      </div>
+      
+      <div class="flex flex-row items-start justify-start py-0 pr-1 pl-0">
+        <a href="#bookings" class="relative leading-6 capitalize font-medium inline-block min-w-20 z-8 text-black no-underline" >bookings</a>
+
+    </div>
+    
+    <div class="flex flex-row items-start justify-start py-0 px-1">
+      <a href="#blog" class="relative leading-6 capitalize font-medium inline-block min-w-14 z-8 text-black no-underline" >blog</a>
+
+  </div>
+  
+        </div>
+        <div class="flex flex-col items-start justify-start gap-[1rem]">
+          <div
+            class="[text-decoration:none] relative text-[2rem] leading-[2.625rem] capitalize font-medium text-[inherit] inline-block min-w-[5.188rem] z-[8] mq450:text-[1.188rem] mq450:leading-[1.563rem] mq1050:text-[1.625rem] mq1050:leading-[2.125rem]"
+            >legal</div
+          >
+          <a href="#terms-of-use" class="relative leading-6 capitalize font-medium inline-block min-w-36 z-8 text-black no-underline" >terms of use</a>
+          <a href="#privacy-policy" class="relative leading-6 capitalize font-medium inline-block min-w-36 z-8 text-black no-underline" >privacy policy</a>
+          <a href="#cookie-policy" class="relative leading-6 capitalize font-medium inline-block min-w-36 z-8 text-black no-underline" >cookie policy</a>
+          
+          
+        </div>
+        <div class="flex flex-col items-start justify-start gap-[1rem]">
+          <div
+            class="[text-decoration:none] relative text-[2rem] leading-[2.625rem] capitalize font-medium text-[inherit] inline-block min-w-[8rem] z-[8] mq450:text-[1.188rem] mq450:leading-[1.563rem] mq1050:text-[1.625rem] mq1050:leading-[2.125rem]"
+            >product</div
+          >
+          <a href="#take-tour" class="relative leading-6 capitalize font-medium inline-block min-w-20 z-8 text-black no-underline" >take tour</a>
+          <a href="#live-chat" class="relative leading-6 capitalize font-medium inline-block min-w-18 z-8 text-black no-underline" >live chat</a>
+          <a  class="relative leading-6 capitalize font-medium inline-block min-w-16 z-8 text-black no-underline"  href="#reviews" >reviews</a>
+          
+          
+        </div>
+        <div
+          class="w-[21.25rem] flex flex-col items-start justify-start gap-[1rem] max-w-full"
+        >
+          <div
+            class="[text-decoration:none] relative text-[2rem] leading-[2.625rem] capitalize font-medium text-[inherit] z-[8] mq450:text-[1.188rem] mq450:leading-[1.563rem] mq1050:text-[1.625rem] mq1050:leading-[2.125rem]"
+            >Newsletter</div
+          >
+          <a href="#stay-up-to-date" class="relative leading-6 capitalize font-medium inline-block min-w-32 z-8 text-black no-underline" >Stay up to date</a>
+
+
+          <div class="self-stretch shadow-[-13px_13px_104.09px_rgba(161,_161,_161,_0.1)] rounded bg-white flex flex-row items-start justify-between py-[0.625rem] pr-[0.625rem] pl-[1.5rem] box-border max-w-full gap-[1.25rem] z-[8] text-gray-200 mq450:flex-wrap">
+            <div class="h-[5.063rem] w-[21.25rem] relative shadow-[-13px_13px_104.09px_rgba(161,_161,_161,_0.1)] rounded bg-white hidden max-w-full"></div>
+            <div class="flex flex-col items-start justify-start pt-[1.125rem] px-[0rem] pb-[0rem]">
+                <input type="email" placeholder="Your email" class="relative leading-[1.625rem] font-medium inline-block min-w-[5.188rem] z-[1] border border-gray-300 rounded py-2 px-4" />
+            </div>
+            <button class="cursor-pointer [border:none] pt-[1.125rem] px-[2.5rem] pb-[1.062rem] bg-black rounded flex flex-row items-start justify-start z-[1] hover:bg-darkslategray">
+                <div class="h-[3.813rem] w-[10rem] relative rounded bg-black hidden"></div>
+                <div class="relative text-[1rem] leading-[1.625rem] capitalize font-medium font-clash-display text-white text-left inline-block min-w-[5rem] z-[1]">
+                    Subscribe
+                </div>
+            </button>
+        </div>
+        </div>
+      </div>
+      <footer
+        class="self-stretch flex flex-row items-start justify-end py-[0rem] pr-[0.062rem] pl-[0rem] box-border max-w-full text-left text-[1rem] text-black font-clash-display">
+        <div
+          class="flex-1 box-border overflow-hidden flex flex-row items-start justify-center pt-[2.312rem] pb-[2.437rem] pr-[1.25rem] pl-[1.5rem] max-w-full z-[8] border-t-[1px] border-solid border-gray-600">
+          <div class="relative leading-[1.625rem] capitalize font-medium">
+            Copyright 2022 uifry.com all rights reserved
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const getStartedButton = document.getElementById('getStartedButton');
+      const watchVideoButton = document.getElementById('watchVideoButton');
+      const getStartedImg = document.getElementById('getStartedImg');
+      const watchVideoImg = document.getElementById('watchVideoImg');
+
+      getStartedButton.addEventListener('click', function () {
+        // Set 'Get Started' button to black background and white text
+        getStartedButton.classList.add('bg-black', 'text-white');
+        getStartedButton.classList.remove('bg-white', 'text-black');
+        getStartedButton.querySelector('div:nth-child(2)').classList.add('text-white');
+        getStartedButton.querySelector('div:nth-child(2)').classList.remove('text-black');
+        getStartedImg.classList.add('invert');
+
+        // Set 'Watch Video' button to white background and black text
+        watchVideoButton.classList.add('bg-white', 'text-black');
+        watchVideoButton.classList.remove('bg-black', 'text-white');
+        watchVideoButton.querySelector('div:nth-child(2)').classList.add('text-black');
+        watchVideoButton.querySelector('div:nth-child(2)').classList.remove('text-white');
+        watchVideoImg.classList.remove('invert');
+      });
+
+      watchVideoButton.addEventListener('click', function () {
+        // Set 'Watch Video' button to black background and white text
+        watchVideoButton.classList.add('bg-black', 'text-white');
+        watchVideoButton.classList.remove('bg-white', 'text-black');
+        watchVideoButton.querySelector('div:nth-child(2)').classList.add('text-white');
+        watchVideoButton.querySelector('div:nth-child(2)').classList.remove('text-black');
+        watchVideoImg.classList.add('invert');
+
+        // Set 'Get Started' button to white background and black text
+        getStartedButton.classList.add('bg-white', 'text-black');
+        getStartedButton.classList.remove('bg-black', 'text-white');
+        getStartedButton.querySelector('div:nth-child(2)').classList.add('text-black');
+        getStartedButton.querySelector('div:nth-child(2)').classList.remove('text-white');
+        getStartedImg.classList.remove('invert');
+      });
+    });
+  </script>
+
+</body>
+
+</html>
